@@ -12,7 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalAssignment">
         <activity
-            android:name=".MainActivity"
+            android:name=".VideoRecording"
+            android:exported="false" />
+        <activity
+            android:name=".Interactivity"
+            android:exported="false" />
+        <activity
+            android:name=".Map"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
