@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.finalassignment.databinding.ActivityInteractivityBinding
-import com.example.finalassignment.databinding.ActivityPersonalInfoBinding
 
 class Interactivity : AppCompatActivity() {
     private lateinit var binding : ActivityInteractivityBinding
@@ -19,10 +18,13 @@ class Interactivity : AppCompatActivity() {
         binding = ActivityInteractivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnNext.setOnClickListener {
-            val intentMap = Intent(this, Map::class.java)
-            startActivity(intentMap)
+        binding.btnVideo.setOnClickListener {
+            val intentVideoRecording = Intent(this, VideoRecording::class.java)
+            startActivity(intentVideoRecording)
         }
+
+        binding.btnMap.setOnClickListener { goToMapPage() }
+        binding.btnNext.setOnClickListener { goToMapPage() }
 
         binding.btnBack.setOnClickListener { finish() }
 
@@ -31,5 +33,10 @@ class Interactivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    private fun goToMapPage() {
+        val intentMap = Intent(this, Map::class.java)
+        startActivity(intentMap)
     }
 }
