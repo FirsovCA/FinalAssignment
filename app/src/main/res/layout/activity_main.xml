@@ -9,89 +9,121 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="App Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088" />
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:text="In-Store Product Locator"
+        android:textSize="30sp"
+        android:layout_gravity="center"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="16dp"
+        android:textColor="@color/green_dark"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/btn_sign_up_google"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Sign up with Google" />
-
-        <Space
-            android:layout_width="16dp"
-            android:layout_height="0dp" />
-
-        <Button
-            android:id="@+id/btn_sign_up_facebook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Sign up with Facebook" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/green_secondary"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.224">
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="80dp" >
 
         <Button
             android:id="@+id/btn_sign_up"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/green_dark"
             android:layout_weight="1"
-            android:text="Sign up" />
+            android:text="Sign Up" />
 
-        <Space
-            android:layout_width="16dp"
+        <View
+            android:layout_width="32dp"
             android:layout_height="0dp" />
 
         <Button
-            android:id="@+id/btn_sign_up_local"
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_login"
             android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/green_dark"
             android:layout_weight="1"
-            android:text="Sign up Locally" />
+            android:text="Login" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_secondary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingRight="64dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="64dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="60dp" >
+
+        <Button
+            android:id="@+id/btn_sign_up_google"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/green_dark"
+            android:text="Sign up with Google" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/green_secondary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="64dp"
+        android:paddingTop="16dp"
+        android:paddingRight="64dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/btn_login_anonymous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/green_dark"
+            android:text="Login as anonymous" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
