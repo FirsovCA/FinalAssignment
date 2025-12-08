@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countries">
+        <item>Select country</item>
+        <item>United States</item>
+        <item>Canada</item>
+        <item>United Kingdom</item>
+        <item>Germany</item>
+        <item>France</item>
+        <item>Australia</item>
+        <item>Japan</item>
+        <item>China</item>
+        <item>India</item>
+        <item>Brazil</item>
+    </string-array>
+
+    <string-array name="usa_cities">
+        <item>Select city</item>
+        <item>New York</item>
+        <item>Los Angeles</item>
+        <item>Chicago</item>
+        <item>Houston</item>
+        <item>Miami</item>
+    </string-array>
+
+    <string-array name="canada_cities">
+        <item>Select city</item>
+        <item>Toronto</item>
+        <item>Vancouver</item>
+        <item>Montreal</item>
+        <item>Calgary</item>
+        <item>Ottawa</item>
+    </string-array>
+
+    <string-array name="uk_cities">
+        <item>Select city</item>
+        <item>London</item>
+        <item>Manchester</item>
+        <item>Birmingham</item>
+        <item>Liverpool</item>
+        <item>Leeds</item>
+    </string-array>
+
+    <string-array name="germany_cities">
+        <item>Select city</item>
+        <item>Berlin</item>
+        <item>Munich</item>
+        <item>Hamburg</item>
+        <item>Frankfurt</item>
+        <item>Cologne</item>
+    </string-array>
+
+    <string-array name="france_cities">
+        <item>Select city</item>
+        <item>Paris</item>
+        <item>Lyon</item>
+        <item>Marseille</item>
+        <item>Toulouse</item>
+        <item>Nice</item>
+    </string-array>
+
+    <string-array name="australia_cities">
+        <item>Select city</item>
+        <item>Sydney</item>
+        <item>Melbourne</item>
+        <item>Brisbane</item>
+        <item>Perth</item>
+        <item>Adelaide</item>
+    </string-array>
+
+    <string-array name="japan_cities">
+        <item>Select city</item>
+        <item>Tokyo</item>
+        <item>Osaka</item>
+        <item>Kyoto</item>
+        <item>Yokohama</item>
+        <item>Sapporo</item>
+    </string-array>
+
+    <string-array name="china_cities">
+        <item>Select city</item>
+        <item>Beijing</item>
+        <item>Shanghai</item>
+        <item>Shenzhen</item>
+        <item>Guangzhou</item>
+        <item>Chengdu</item>
+    </string-array>
+
+    <string-array name="india_cities">
+        <item>Select city</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Hyderabad</item>
+    </string-array>
+
+    <string-array name="brazil_cities">
+        <item>Select city</item>
+        <item>São Paulo</item>
+        <item>Rio de Janeiro</item>
+        <item>Brasília</item>
+        <item>Salvador</item>
+        <item>Fortaleza</item>
+    </string-array>
+
+    <string-array name="nothing">
+        <item>Select city</item>
+    </string-array>
+</resources>
