@@ -76,6 +76,8 @@ class Map : AppCompatActivity(), OnMapReadyCallback {
                 android.Manifest.permission.ACCESS_FINE_LOCATION
             ) == PackageManager.PERMISSION_GRANTED
         ) {
+            mapTools.isMyLocationEnabled = true
+
             locationClient = LocationServices.getFusedLocationProviderClient(this)
 
             locationClient.lastLocation.addOnSuccessListener { location ->
